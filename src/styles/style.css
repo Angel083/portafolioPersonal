@@ -1,0 +1,20 @@
+/* Inicializando variables */
+:root{
+  --colorClaro3   : hsl(219, 35%,90%);
+  --colorClaro2   : hsl(219, 41%,81%);
+  --colorClaro1   : hsl(219, 44%,71%);
+  --colorPrincipal: hsl(219, 46%,60%);
+  --colorOscuro1  : hsl(219, 32%,46%);
+  --colorOscuro2  : hsl(219, 35%,34%);
+  --colorOscuro3   : hsl(219, 42%,24%);
+
+  --colorGris1    : hsl(219, 5%,95%);
+  --colorGris1-50 : hsl(219, 5%,95%,0.5);
+  --colorGris2    : hsl(219, 10%,65%);
+  --colorGris2-50 : hsl(219, 10%,65%, 0.5);
+  --colorGris3    : hsl(219, 15%,41%);
+  --colorGris3-50 : hsl(219, 15%,41%,0.5);
+  --colorGris4    : hsl(219, 20%,22%);
+  --colorGris5    : hsl(219, 30%,10%);
+  --colorGris5-80 : hsl(219, 30%,10%, 0.8);
+}
