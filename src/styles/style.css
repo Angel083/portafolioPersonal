@@ -18,3 +18,41 @@
   --colorGris5    : hsl(219, 30%,10%);
   --colorGris5-80 : hsl(219, 30%,10%, 0.8);
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Reinicio los estilos de html para que sea más conodo manejar la medida rem*/
+html{ 
+  font-size: 62.5%;
+  background-color: var(--colorGris1);
+}
+h1,h2,h3{
+  font-family: 'Poppins', sans-serif;
+  color: var(--colorGris5);
+}
+h1{
+  font-size: 3.6rem;
+}
+
+h2{
+  font-size: 3.2rem;
+}
+
+h3{
+  font-size: 2.8rem;
+}
+li{
+  font-size: 2rem;
+}
+
+p, a{
+  line-height: 28px;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--colorGris4);
+}
+a{
+  color: var(--colorGris2);
+}
