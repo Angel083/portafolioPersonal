@@ -101,4 +101,61 @@ a:hover, a.active{
 
 /* <---------- main ----------> */
 
+.container{
+  padding: 30px;
+  text-align: center;
+  
+}
+
+/* <----- Inicio ----->*/
+
+.inicio{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inicio__background{
+  background-image: url('../assets/img/fondoPortafolio.png');
+  background-attachment: fixed;
+  background-size: cover ;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.inicio__imgPersonal{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-width: 10px;
+  margin: 30px;
+}
+.inicio__description .saludo{
+  font-size: 3.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: var(--colorGris1);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  display: block;
+}
+.inicio__description .especialidad{
+  font-size: 3.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  display: block;
+  color: var(--colorPrincipal)
+}
 
