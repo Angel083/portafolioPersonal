@@ -159,3 +159,12 @@ a:hover, a.active{
   color: var(--colorPrincipal)
 }
 
+/* <----- acerca de mi ----->*/
+
+.acercaDeMi__description{
+  margin: 0 20%;
+  padding: 20px ;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 2px var(--colorGris3);
+}
+
