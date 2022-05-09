@@ -56,3 +56,49 @@ p, a{
 a{
   color: var(--colorGris2);
 }
+
+/* Clases */
+/* <---------- Navbar ----------> */
+.navbar{
+  padding: 0 20px;
+  width: 100%;
+  background-color: var(--colorGris5-80);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 5;
+  z-index: 1;
+}
+.navbar__logo{
+  padding: 10px;
+}
+.navbar__logo img{
+  width: 100px;
+}
+.navbar__items {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.navbar__items ul {
+  display: flex;
+  list-style: none;
+}
+.navbar__items ul li {
+  padding: 10px ;
+}
+.navbar__items ul li a{
+  display: block;
+  text-decoration: none;
+}
+
+a:hover, a.active{
+  color: var(--colorGris1);
+}
+
+
+
+/* <---------- main ----------> */
+
+
