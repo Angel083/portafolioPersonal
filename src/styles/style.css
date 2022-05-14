@@ -51,7 +51,7 @@ p, a{
   line-height: 28px;
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
-  color: var(--colorGris4);
+  color: var(--colorGris3);
 }
 a{
   color: var(--colorGris2);
@@ -181,7 +181,11 @@ a:hover, a.active{
   margin: 30px;
   width: 200px;
   border-radius: 10px;
+  transition: all 400ms;
+}
+.card:hover{
   box-shadow: 5px 5px 10px var(--colorGris3);
+  transform: scale(1.15);
 }
 .card__img{
   padding: 2px;
