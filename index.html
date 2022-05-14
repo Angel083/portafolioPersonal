@@ -5,10 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angel Gasca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/normalize.css">
   <link rel="stylesheet" href="./src/styles/style.css">
+  <script type="module" src="./src/scripts/index.js"></script>
+  <link rel="shortcut icon" href="./src/assets/svg/logo.svg" type="image/x-icon">
 </head>
 <body>
-  <p>Hola mundo</p>
+  <head>
+    <nav class="navbar">
+      <figure class="navbar__logo">
+        <img src="./src/assets/svg/logo.svg" alt="logo personal" srcset="">
+      </figure>
+      <section class="navbar__items">
+        <ul>
+          <li ><a class="active" href="#">Inicio</a></li>
+          <li><a href="#">Acerca de mi</a></li>
+          <li><a href="#">Tecnologías</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </section>
+    </nav>
+  </head>
+  <main>
+    <section class="inicio">
+      <div class="inicio__background"></div>
+      <div class="inicio__description">
+          <span class="saludo">Hola</span>
+          <span class="saludo">Soy Ángel Gasca</span>
+          <span class="especialidad">Desarrollador Frontend</span>
+      </div>
+      <figure>
+        <img src="./src/assets/img/fotoPersonal.png" alt="Angel" class="inicio__imgPersonal">
+      </figure>
+    </section>
+    <section class="acercaDeMi">
+      <div class="container">
+        <h1>Acerca de mí</h1>
+        <div class="acercaDeMi__description">
+          <p>
+            Soy estudiante en la carrera de Ingeniería en Sistemas Computacionales del TecNM campus Teziutlán. Me apasionan y me parece increíble como es que se crean y se generan las soluciones tecnológicas. Me especializo en desarrollo Frontend. Busco crecer profesionalmente enriqueciendo mis habilidades para contribuir y cooperar en equipos multidisciplinarios. He participado en concursos estatales y nacionales por lo que cuento con experiencia en trabajos en equipo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="tecnologias">
+      <div class="container">
+        <h1>Tecnologias</h1>
+        <div class="tecnologias__cards" id="tecnologias__cards">
+        </div>
+      </div>
+    </section>
+    <section class="proyectos">
+      <div class="container">
+        <h1>Proyectos</h1>
+      </div>
+    </section>
+    <section class="contacto"></section>
+  </main>
+  <footer>
+    <div>
+
+    </div>
+  </footer>
 </body>
 </html>
