@@ -27,6 +27,7 @@
 html{ 
   font-size: 62.5%;
   background-color: var(--colorGris1);
+  scroll-behavior: smooth;
 }
 h1,h2,h3{
   font-family: 'Poppins', sans-serif;
@@ -62,7 +63,7 @@ a{
 .navbar{
   padding: 0 20px;
   width: 100%;
-  background-color: var(--colorGris5-80);
+  background-color: var(--colorGris5);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -86,15 +87,36 @@ a{
   list-style: none;
 }
 .navbar__items ul li {
-  padding: 10px ;
+  /* margin : 10px; */
+  width: 140px;
 }
 .navbar__items ul li a{
+  padding: 10px 0px ;
   display: block;
   text-decoration: none;
+  text-align: center;
 }
 
 a:hover, a.active{
   color: var(--colorGris1);
+  /* background-color: var(--colorClaro2); */
+  /* transform: scale(1.15); */
+}
+
+.indicadorSuperior{
+  width: 150px;
+  height: 10px;
+  background-color: var(--colorPrincipal);
+  position: absolute;
+  top: 0;
+}
+.indicadorInferior{
+  width: 140px;
+  height: 10px;
+  background-color: var(--colorPrincipal);
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease-out all;
 }
 
 
@@ -102,7 +124,8 @@ a:hover, a.active{
 /* <---------- main ----------> */
 
 .container{
-  padding: 30px;
+  margin: 20px 0px;
+  padding: 50px 30px;
   text-align: center;
   
 }
@@ -200,3 +223,5 @@ a:hover, a.active{
   padding: 10px;
   text-align: center;
 }
+
+/* <---------- Proyectos --------> */
