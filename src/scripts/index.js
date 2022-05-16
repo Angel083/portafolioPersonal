@@ -1,4 +1,4 @@
-// Para el menu de navegacion
+// Para el menu de navegacion cambie de color cada que esta en una seccion diferente
 const navbar = document.querySelector(".navbar__items")
 const indicador = document.querySelector(".indicadorInferior")
 const secciones = document.querySelectorAll(".seccion")
@@ -10,20 +10,17 @@ indicador.style.width = 140+ 'px'
 const observer = new IntersectionObserver((secciones, observer) => {
   secciones.forEach((seccion)=> {
     if (seccion.isIntersecting) {
-      let indexSeccionActiva = seccion.target.id- 1
+      let indexSeccionActiva = seccion.target.id -1
       indicador.style.transform = `translateX(${140*(indexSeccionActiva )}px)`;
-      // indicador.style.transform = `translateX(${140*(indexSeccionActiva)}px)`
-      indicadorNav.forEach((index) =>{
-        index.classList.remove("active")
-        
+      indicadorNav.forEach((item) =>{
+        item.classList.remove("active")
       })
       indicadorNav[indexSeccionActiva].classList.add('active')
-      // console.log()
     }
   })
 }, {
   rootMargin:'-100px 0px 0px 0px',
-  threshold : 0.2
+  threshold : [0.5]
 });
 
 secciones.forEach(element => observer.observe(element));
@@ -32,6 +29,19 @@ const onResize= () => {
   navbar.querySelector('a').offsetWidth
 }
 window.addEventListener('resize', onResize)
+//// Para mostrar el menu cuando estoy en movil y tablet
+const menu = document.querySelector(".navbar__menu")
+menu.addEventListener( ('click') , () => {
+  if (navbar.classList.contains('menu_active')) {
+    navbar.classList.remove('menu_active')
+  }
+  else{
+    navbar.style.transition = ("2s ease-in-out;")
+    navbar.classList.add('menu_active')
+  }
+})
+
+
 
 // Para las diversas tecnologias que manejo
 import Tech from "./classes/technology.js";
@@ -60,3 +70,51 @@ function mostrarTecnologias(tecnologia){
     `
   element.appendChild(card)
 }
+
+
+// Para los proyectos
+
+window.addEventListener('load', function () {
+  new Glider(document.querySelector('.carousel__lista'),{
+    slidesToShow    : 1,
+    slidesToScroll  : 1,
+    draggable       : true,
+    arrows          : {
+      prev  : ".carousel__anterior",
+      next  : ".carousel__siguiente"
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 320,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: 0.25
+        }
+      },
+      {
+        // screens greater than >= 1024px
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: 0.25
+        }
+      },
+      {
+        // screens greater than >= 1024px
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: 0.25
+        }
+      }
+    ]
+  })
+})
