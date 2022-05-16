@@ -36,10 +36,6 @@ const arrayTechs = [
     ruta:  "./src/assets/svg/flutter.svg",
   },
   {
-    nombre : "React native",
-    ruta:  "./src/assets/svg/illustrator.svg",
-  },
-  {
     nombre : "MySQL",
     ruta:  "./src/assets/svg/mysql.svg",
   },
