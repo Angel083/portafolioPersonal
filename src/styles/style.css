@@ -189,7 +189,6 @@ a{
   margin: 20px 0px;
   padding: 50px 30px;
   text-align: center;
-  
 }
 
 @media screen and (max-width:1024px) {
@@ -328,7 +327,7 @@ a{
 } 
 
 .card{
-  margin: 30px;
+  margin: 20px;
   width: 150px;
   border-radius: 10px;
   transition: all 400ms;
@@ -354,7 +353,7 @@ a{
 /* <---------- Proyectos --------> */
 .carousel__contenedor{
   position: relative;
-  align-items: center;
+  /* align-items: center; */
   align-content: center;
   justify-content: center;
 }
@@ -391,4 +390,95 @@ a{
 .carousel__elemento img{
   width: 400px;
   height: 200px;
+}
+
+
+/*<-------- Footer ---------->*/
+
+footer{
+  background-color: var(--colorOscuro3);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.redesSociales{
+  margin: 20px 0;
+  width:320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  pad: 100px;
+}
+.redesSociales button{
+  background: none;
+  border: none;
+}
+.icon{
+  font-size: 5rem;
+  color: var(--colorPrincipal);
+}
+.redesSociales i:hover{
+  color: var(--colorGris1) ;
+}
+.footer__name{
+  color: var(--colorGris2);
+}
+
+/* <---------- Formulario ----------> */
+.form__container{
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 2px var(--colorGris3);
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+.form__main{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.form__input{
+  height: 30px;
+  border-radius: 5px;
+  border-width :0;
+  box-shadow: 1px 1px 1px 0px var(--colorGris3);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+.form__input--message{
+  height: 100px;
+  border-radius: 5px;
+  border-width :0;
+  box-shadow: 1px 1px 1px 0px var(--colorGris3);
+  padding: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.form__main button{
+  border-width :0;
+  box-shadow: 0px 0px 10px 0px var(--colorPrincipal-80);
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 426px ) {
+
+  .form__input{
+    font-size: 2rem;
+  }
+  .form__input--message{
+    font-size: 2rem;
+  }
+  
+  .form__main button{
+    font-size: 2.2rem;
+  }
 }

@@ -91,8 +91,7 @@ window.addEventListener('load', function () {
           // Set to `auto` and provide item width to adjust to viewport
           slidesToShow: 1,
           slidesToScroll: 1,
-          itemWidth: 150,
-          duration: 0.25
+          duration: 5
         }
       },
       {
@@ -101,8 +100,7 @@ window.addEventListener('load', function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          itemWidth: 150,
-          duration: 0.25
+          duration: 5
         }
       },
       {
@@ -117,4 +115,10 @@ window.addEventListener('load', function () {
       }
     ]
   })
+})
+
+// --------- Botón de enviar mensaje 
+const enviar = document.querySelector(".form_submit")
+enviar.addEventListener(("click"), () => {
+  alert("Correo enviado")
 })
