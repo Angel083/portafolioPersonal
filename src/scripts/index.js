@@ -61,7 +61,7 @@ function mostrarTecnologias(tecnologia){
   card.classList = "card";
   card.innerHTML =`
     <figure >
-      <img src=${tecnologia.getImg()} alt=${tecnologia.getNombre()} class ="card__img" >
+      <img src=${tecnologia.getImg()} alt='${tecnologia.getNombre()}' class ="card__img" >
       </img>
     </figure>
     <div class="card__name">
