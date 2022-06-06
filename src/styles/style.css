@@ -67,7 +67,7 @@ a{
 
 .navbar{
   padding: 0 10px;
-  width: 100%;
+  width: 100vw;
   background-color: var(--colorGris5);
   position: fixed;
   display: flex;
@@ -116,16 +116,11 @@ a{
 }
 
 .menu_active ul li a{
-  /* padding: 10px 0px ; */
   display: block;
   text-decoration: none;
   text-align: center;
   color: var(--colorGris1);
 }
-
-/* .menu_active .indicadorInferior{
-  display: none;
-} */
 
 
 @media screen and (min-width: 1024px) {
@@ -309,36 +304,66 @@ a{
   }
 }
 /* <----- tecnologias ----->*/
-
+p{
+  line-height: 28px;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--colorGris3);
+}
 .tecnologias__cards{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px ;
+  justify-content: space-around;
+  align-content: space-around;
 } 
-
 .card{
-  margin: 20px;
-  width: 150px;
+  margin: 10px;
+  width: 50px;
   border-radius: 10px;
   transition: all 400ms;
-}
-.card:hover{
-  box-shadow: 5px 5px 10px var(--colorGris3);
-  transform: scale(1.15);
+  margin:0  2rem;
 }
 .card__img{
   padding: 2px;
   border-radius:10px 10px 0 0;
-  width: 120px;
-  height: 150px;
+  width: 60px;
+  height: 75px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
 }
-.card__name{
-  padding: 10px;
-  text-align: center;
+
+@media screen and (min-width: 1024px) {
+  .tecnologias__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px ;
+  } 
+  
+  .card{
+    margin: 20px;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 400ms;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 10px var(--colorGris3);
+    transform: scale(1.15);
+  }
+  .card__img{
+    padding: 2px;
+    border-radius:10px 10px 0 0;
+    width: 120px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__name{
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /* <---------- Proyectos --------> */
