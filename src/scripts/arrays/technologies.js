@@ -36,6 +36,10 @@ const arrayTechs = [
     ruta:  "./src/assets/svg/c-sharp.svg",
   },
   {
+    nombre : ".Net",
+    ruta:  "./src/assets/svg/dotnet.svg",
+  },
+  {
     nombre : "Flutter",
     ruta:  "./src/assets/svg/flutter.svg",
   },
@@ -46,6 +50,10 @@ const arrayTechs = [
   {
     nombre : "Microsoft SQL Server",
     ruta:  "./src/assets/svg/sql-server.svg",
+  },
+  {
+    nombre : "PostgreSQL",
+    ruta:  "./src/assets/svg/postgresql.svg",
   },
   {
     nombre : "Illustrator",
