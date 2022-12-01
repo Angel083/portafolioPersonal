@@ -370,10 +370,7 @@ p{
 
 /* <---------- Proyectos --------> */
 .carousel__contenedor{
-  position: relative;
-  /* align-items: center; */
-  align-content: center;
-  justify-content: center;
+  padding: 0 15%;
 }
 .carousel__anterior,
 .carousel__siguiente{
@@ -401,6 +398,14 @@ p{
   width: 100%;
   height: 100%;
 }
+.carousel__lista div img{
+  width: 100%;
+  /* margin: 0 auto; */
+  /* height: 100%; */
+}
+.carousel__lista div p{
+  margin-top: 10px ;
+}
 .carousel__elemento{
   width: 100px;
   height: 200px;
@@ -409,7 +414,9 @@ p{
   width: 400px;
   height: 250px;
 }
-
+.carousel__lista .slick-prev::before, .carousel__lista .slick-next::before{
+  color: var(--colorPrincipal) ;
+}
 
 /*<-------- Footer ---------->*/
 
