@@ -74,51 +74,53 @@ function mostrarTecnologias(tecnologia){
 
 // Para los proyectos
 
-window.addEventListener('load', function () {
-  new Glider(document.querySelector('.carousel__lista'),{
-    slidesToShow    : 1,
-    slidesToScroll  : 1,
-    draggable       : true,
-    arrows          : {
-      prev  : ".carousel__anterior",
-      next  : ".carousel__siguiente"
-    },
-    responsive: [
-      {
-        // screens greater than >= 775px
-        breakpoint: 320,
-        settings: {
-          // Set to `auto` and provide item width to adjust to viewport
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          duration: 5
-        }
-      },
-      {
-        // screens greater than >= 1024px
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          duration: 5
-        }
-      },
-      {
-        // screens greater than >= 1024px
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          itemWidth: 150,
-          duration: 0.25
-        }
-      }
-    ]
-  })
-})
+// window.addEventListener('load', function () {
+//   new Glider(document.querySelector('.carousel__lista'),{
+//     slidesToShow    : 1,
+//     slidesToScroll  : 1,
+//     draggable       : true,
+//     arrows          : {
+//       prev  : ".carousel__anterior",
+//       next  : ".carousel__siguiente"
+//     },
+//     responsive: [
+//       {
+//         // screens greater than >= 775px
+//         breakpoint: 320,
+//         settings: {
+//           // Set to `auto` and provide item width to adjust to viewport
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           duration: 1
+//         }
+//       },
+//       {
+//         // screens greater than >= 1024px
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           duration: 1
+//         }
+//       },
+//       {
+//         // screens greater than >= 1024px
+//         breakpoint: 1440,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           itemWidth: 150,
+//           duration: 0.25
+//         }
+//       }
+//     ]
+//   })
+// })
 
 // --------- Botón de enviar mensaje 
-const enviar = document.querySelector(".form_submit")
-enviar.addEventListener(("click"), () => {
-  alert("Correo enviado")
-})
+window.addEventListener('load', function () {
+  const enviar = document.querySelector(".form__submit")
+  enviar.addEventListener('click', () => {
+    alert("Correo enviado")
+  })
+});
