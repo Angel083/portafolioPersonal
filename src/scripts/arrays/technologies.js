@@ -28,44 +28,24 @@ const arrayTechs = [
     ruta:  "./src/assets/svg/react.svg",
   },
   {
-    nombre : "Dart",
-    ruta:  "./src/assets/svg/dart.svg",
-  },
-  {
-    nombre : "C#",
-    ruta:  "./src/assets/svg/c-sharp.svg",
-  },
-  {
-    nombre : ".Net",
-    ruta:  "./src/assets/svg/dotnet.svg",
-  },
-  {
-    nombre : "Flutter",
-    ruta:  "./src/assets/svg/flutter.svg",
-  },
-  {
     nombre : "MySQL",
     ruta:  "./src/assets/svg/mysql.svg",
   },
   {
-    nombre : "Microsoft SQL Server",
-    ruta:  "./src/assets/svg/sql-server.svg",
+    nombre : "Golang",
+    ruta:  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fwhat-is-go-programming-language%2F&psig=AOvVaw0Q6h_4PMlwOu3nanDxhcBg&ust=1703344088760000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiOia2po4MDFQAAAAAdAAAAABAD,
   },
   {
-    nombre : "PostgreSQL",
-    ruta:  "./src/assets/svg/postgresql.svg",
+    nombre : "CodeIgniter",
+    ruta:  "./src/assets/svg/mysql.svg",
   },
   {
-    nombre : "Illustrator",
-    ruta:  "./src/assets/svg/illustrator.svg",
+    nombre : "Docker",
+    ruta:  "./src/assets/svg/mysql.svg",
   },
   {
     nombre : "Figma",
     ruta:  "./src/assets/svg/figma.svg",
-  },
-  {
-    nombre : "Azure",
-    ruta:  "./src/assets/svg/microsoft-azure.svg",
   },
 ]
 
