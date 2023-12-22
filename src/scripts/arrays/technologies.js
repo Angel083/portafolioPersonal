@@ -33,15 +33,15 @@ const arrayTechs = [
   },
   {
     nombre : "Golang",
-    ruta:  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fwhat-is-go-programming-language%2F&psig=AOvVaw0Q6h_4PMlwOu3nanDxhcBg&ust=1703344088760000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiOia2po4MDFQAAAAAdAAAAABAD,
+    ruta:  "./src/assets/svg/gopher.svg",
   },
   {
     nombre : "CodeIgniter",
-    ruta:  "./src/assets/svg/mysql.svg",
+    ruta:  "./src/assets/svg/codeigniter-icon.svg",
   },
   {
     nombre : "Docker",
-    ruta:  "./src/assets/svg/mysql.svg",
+    ruta:  "./src/assets/svg/docker-icon.svg",
   },
   {
     nombre : "Figma",
